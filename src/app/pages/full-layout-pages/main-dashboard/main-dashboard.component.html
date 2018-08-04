@@ -8,9 +8,22 @@
 			<div class="card-body">
 				<div class="card-block">
 					<div class="card-text">
-            Text here
-            <input [(ngModel)]="pokemonName" type="text" />
-            <button (click)="onSubmit()">Submit</button>
+            <div class="col-xl-3 col-lg-6 col-md-12">
+              <div class="card" style="height: 450.65px;">
+                <div class="card-body">
+                  <div class="card-block">
+                    <img alt="Card image cap" class="card-img img-fluid mb-3" src="{{getPokemonImageAsset(currentPokemonShown)}}">
+                    <!-- <h4 class="card-title">Celebi</h4> -->
+                    <!-- <p class="card-text">Sweet halvah dragée jelly-o halvah carrot cake oat cake. Donut jujubes jelly chocolate cake marzipan chocolate chocolate
+                      bar.
+                    </p> -->
+
+                    <input [(ngModel)]="pokemonName" type="text" />
+                    <button class="btn btn-raised btn-success" (click)="onSubmit(pokemonName)">Submit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
 					</div>
 				</div>
 			</div>
